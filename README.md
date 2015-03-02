@@ -1,5 +1,7 @@
 # Handlebars.java Math Helpers
 
+[![Build Status](https://travis-ci.org/mrhanlon/handlebars-math-helper.svg?branch=master)](https://travis-ci.org/mrhanlon/handlebars-math-helper)
+
 A Library of Helpers for performing simple math operations in Handlebars.
 
 Perform math operations in handlebars. Inspired by [this JSFiddle](http://jsfiddle.net/mpetrovich/wMmHS/).
@@ -11,7 +13,10 @@ decimal results using the extra parameter `scale`, which corresponds to calling
 `BigDecimal.setScale(int scale, RoundingMode.HALF_UP)`.
 
 ## addition
+
+```
 {{math arg0 "+" arg1}} // arg0 + arg1
+```
 
 ## subtraction
 
