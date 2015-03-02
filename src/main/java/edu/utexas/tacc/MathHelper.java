@@ -88,6 +88,10 @@ public class MathHelper implements Helper<Object> {
 
       MathContext mc = new MathContext(16, RoundingMode.HALF_UP);
 
+      if (value == null || options.param(1) == null) {
+        throw new IllegalArgumentException("Cannot perform operations on null values");
+      }
+      
       BigDecimal t0 = new BigDecimal(value.toString());
       BigDecimal t1 = new BigDecimal(options.param(1).toString());
       BigDecimal result;
